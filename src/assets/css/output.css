@@ -679,11 +679,6 @@ video {
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-.text-indigo-600 {
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
-}
-
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -717,7 +712,7 @@ video {
 .login-page {
   background-image: url('assets/images/login-bg.jpeg');
   background-size: cover;
-  padding-bottom: 140px;
+  padding-bottom: 100px;
   /* overflow-y: hidden; */
   width: 100%;
   height: 100%;
