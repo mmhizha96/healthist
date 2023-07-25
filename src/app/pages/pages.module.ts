@@ -1,12 +1,11 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { LoginComponent } from './modules/login/login.component';
-import { VerifyComponent } from './modules/verify/verify.component';
-
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { PagesRoutingModule } from './pages-routing.module';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { SidenavComponent } from './main/sidenav/sidenav.component';
+import { HeaderComponent } from './main/header/header.component';
+import { FooterComponent } from './main/footer/footer.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
@@ -17,17 +16,19 @@ import { MatMenuModule } from '@angular/material/menu';
 import { MatListModule } from '@angular/material/list';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatTooltipModule } from '@angular/material/tooltip';
+import {MatTableModule} from '@angular/material/table';
+
+
 @NgModule({
   declarations: [
-    AppComponent,
-    LoginComponent,
-    VerifyComponent,
-
-
+    DashboardComponent,
+    SidenavComponent,
+    HeaderComponent,
+    FooterComponent
   ],
   imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
+    CommonModule,
+    PagesRoutingModule,
     FormsModule,
     MatButtonModule,
     MatSidenavModule,
@@ -38,9 +39,7 @@ import { MatTooltipModule } from '@angular/material/tooltip';
     RouterModule,
     MatExpansionModule,
     MatTooltipModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    MatTableModule
+  ]
 })
-export class AppModule { }
+export class PagesModule { }
