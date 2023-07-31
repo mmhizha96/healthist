@@ -52,7 +52,8 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .toolbar-item-spacer {
-  flex: 1 1 auto;
+  /* flex: 1 1 auto; */
+  width: 65%;
 }
 
 .app-container {
@@ -72,8 +73,11 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   justify-content: center;
 }
 .toolbar{
-  background-color: #1366de;
-  color: #ffff;
+  /* background-color: #1366de; */
+  color:#000;
 }
-
+.title{
+    color: #1366de;
+    margin-bottom: 0px!important;
+}
 

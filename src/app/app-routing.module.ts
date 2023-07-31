@@ -6,7 +6,7 @@ import { VerifyComponent } from './modules/verify/verify.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./pages/pages.module').then(m => m.PagesModule)
+    component:LoginComponent
   },
   {
     path: 'admin',
